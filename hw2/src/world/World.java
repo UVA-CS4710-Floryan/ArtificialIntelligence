@@ -219,8 +219,20 @@ public class World {
 			curRow++;
 		}
 		
+		if(startPos == null)
+		{
+			System.err.println("[Fatal Error]: Map contains no start position...exiting");
+			System.exit(9);
+		}
+		if(endPos == null)
+		{
+			System.err.println("[Fatal Error]: Map contains no ending position...exiting");
+			System.exit(10);
+		}
+		
 		/* Everything seems fine */
 		System.out.println("World loaded! Everything seems ok!");
+		
 	}
 	
 }
